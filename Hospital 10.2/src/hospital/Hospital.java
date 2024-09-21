@@ -158,7 +158,7 @@ public class Hospital {
                 return;
             }
         }
-        System.out.println("Medico no encontrado");
+        System.out.println("Consultorio no encontrado");
     }
 
 

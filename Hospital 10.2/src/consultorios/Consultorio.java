@@ -41,7 +41,7 @@ public class Consultorio {
     }
 
     public String mostrarDatos(){
-        String datos = String.format("ID: s%, Numero de Piso: d%, Numero de Consultorio: d% ", getId(), getPiso(), getNumeroConsultorio());
+        String datos = String.format("ID: %s, Numero de Piso: %d, Numero de Consultorio: %d ", id, piso, numeroConsultorio);
         return datos;
     }
 }

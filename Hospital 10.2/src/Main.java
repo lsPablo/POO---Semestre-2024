@@ -150,6 +150,7 @@ public class Main {
                         case 11:
                             System.out.println("\nA elegido la opcion MOSTRAR CONSULTORIO POR ID");
                             sc.nextLine();
+                            System.out.println("Ingrese el ID del consultorio que deseas buscar");
                             idConsultorio = sc.nextLine();
                             hospital.mostrarConsultorioPorID(idConsultorio);
                             break;
