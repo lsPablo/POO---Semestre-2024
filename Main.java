@@ -25,7 +25,7 @@ public class Main {
 
             switch (opcion) {
                 case 1:
-                if(!inventario.validarExistenciaDeCategorias()){
+                if(!inventario.validarExistenciadeCategorias()){
                     System.out.println("\n No existen categorias en el sistema");
                     break;
 
@@ -76,12 +76,14 @@ public class Main {
                     break;
 
                 case 4:
-                    //Crear metodo para listar todas las categorias
-                    //Jutnos con sus productos
+                inventario.mostrarCategorias();
                     break;
                 case 5:
                 System.out.println("Seleccionaste la opcion para registrar una categoria");
+                System.out.println("Ingresa el nombre de la categoria");
                 String nombreCategoria = scanner.nextLine();
+
+                scanner.nextLine();
 
                 Categoria categoria =new Categoria(nombreCategoria);
                 inventario.registrarCategoria(categoria);
