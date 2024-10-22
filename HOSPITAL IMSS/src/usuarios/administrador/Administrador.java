@@ -1,0 +1,26 @@
+package usuarios.administrador;
+
+import usuarios.Usuario;
+import usuarios.utils.Rol;
+
+import java.time.LocalDate;
+
+public class Administrador extends Usuario {
+    public Double sueldo;
+    public String rfc;
+    public int aniosTrabajados;
+
+    public Administrador(String id, String nombre, String apellidos, LocalDate fechaNacimiento, String telefono, String contrasenia, Rol rol, Double sueldo, String rfc, int aniosTrabajados) {
+        super(id, nombre, apellidos, fechaNacimiento, telefono, contrasenia, rol);
+        this.sueldo = sueldo;
+        this.rfc = rfc;
+        this.aniosTrabajados = aniosTrabajados;
+    }
+
+    public String mostrarInformacion() {
+        String datos = String.format("ID: %s, NOMBRE: %s, APELLIDOS: %s, FECHA NACIMIENTO: %s, TELEFONO: %s, SUELDO: $%.2f, RFC: %s, ANIOS TRABAJADOS: %d",
+             this.id,this.nombre, this.apellidos, this.fechaNacimiento, this.telefono, this.sueldo, this.rfc, this.aniosTrabajados);
+        return datos;
+    }
+
+}
