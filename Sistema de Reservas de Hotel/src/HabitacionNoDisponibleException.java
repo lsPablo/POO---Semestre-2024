@@ -1,7 +1,6 @@
-package PACKAGE_NAME;
-
 public class HabitacionNoDisponibleException extends RuntimeException {
-  public HabitacionNoDisponibleException(String message) {
-    super(message);
-  }
+    private static final String MENSAJE = "Habitacion NO Disponible";
+    public HabitacionNoDisponibleException() {
+        super(MENSAJE);
+    }
 }

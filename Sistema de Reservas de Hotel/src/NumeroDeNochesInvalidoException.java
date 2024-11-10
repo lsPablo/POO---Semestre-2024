@@ -1,7 +1,6 @@
-package PACKAGE_NAME;
-
 public class NumeroDeNochesInvalidoException extends RuntimeException {
-  public NumeroDeNochesInvalidoException(String message) {
-    super(message);
-  }
+    private static final String MENSAJE = "Por favor, ingrese un número de noches mayor a 0.";
+    public NumeroDeNochesInvalidoException() {
+        super(MENSAJE);
+    }
 }
